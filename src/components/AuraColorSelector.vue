@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const colors = ref([
+interface Color {
+  id: number;
+  name: string;
+  hex: string;
+  bg: string;
+  image: string;
+}
+
+const colors = ref<Color[]>([
     { id: 1, name: 'Midnight', hex: '#111111', bg: '#f3f4f6', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop&bg=transparent' },
     { id: 2, name: 'Starlight', hex: '#f9fafb', bg: '#e5e7eb', image: 'https://images.unsplash.com/photo-1628202926206-c63a34b1618f?q=80&w=800&auto=format&fit=crop&bg=transparent' },
     { id: 3, name: 'Abyss Blue', hex: '#1e3a8a', bg: '#e0e7ff', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop&bg=transparent' },
     { id: 4, name: 'Rose Gold', hex: '#fda4af', bg: '#ffe4e6', image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop&bg=transparent' }
 ]);
-const activeColor = ref(colors.value[0]);
+const activeColor = ref<Color>(colors.value[0]!);
 </script>
 
 <template>

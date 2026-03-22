@@ -2,7 +2,13 @@
 import { ref } from 'vue';
 import { Plus, Minus } from 'lucide-vue-next';
 
-const specs = ref([
+interface Spec {
+  title: string;
+  content: string;
+  open: boolean;
+}
+
+const specs = ref<Spec[]>([
     { title: 'Audio Technology', content: 'Custom high-excursion Aura driver, custom high dynamic range amplifier, Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio with dynamic head tracking.', open: false },
     { title: 'Sensors', content: 'Dual beamforming microphones, inward-facing microphone, skin-detect sensor, motion-detecting accelerometer, speech-detecting accelerometer, and touch control.', open: false },
     { title: 'Battery', content: 'Up to 40 hours of listening time with a single charge (up to 30 hours with Spatial Audio and Head Tracking enabled). 5 minutes of charge time provides around 4 hours of listening time.', open: false },
@@ -10,7 +16,10 @@ const specs = ref([
 ]);
 
 const toggleSpec = (index: number) => {
-    specs.value[index].open = !specs.value[index].open;
+    const spec = specs.value[index];
+    if (spec) {
+      spec.open = !spec.open;
+    }
 };
 </script>
 
