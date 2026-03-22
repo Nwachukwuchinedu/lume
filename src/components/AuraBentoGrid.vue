@@ -12,7 +12,7 @@ import { BatteryCharging, Bluetooth, ArrowRight } from 'lucide-vue-next';
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
       
       <!-- Large Feature 1 -->
-      <div class="bento-card md:col-span-2 relative p-10 flex flex-col justify-end img-zoom-container bg-[#f4f4f5] reveal-up">
+      <div class="bento-card md:col-span-2 relative p-10 flex flex-col justify-end img-zoom-container bg-[#f4f4f5] reveal-up clip-reveal">
         <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1000&auto=format&fit=crop" alt="Noise Cancellation" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
         <div class="relative z-10 text-white">

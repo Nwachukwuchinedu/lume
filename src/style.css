@@ -9,6 +9,11 @@
 
   --animate-marquee: marquee 25s linear infinite;
 
+  /* Global variables for color-aware navbar */
+  --nav-bg: rgba(252, 252, 253, 0.7);
+  --nav-text: #0a0a0a;
+  --nav-border: rgba(0, 0, 0, 0.05);
+
   @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
@@ -18,21 +23,57 @@
 @layer base {
   body {
     @apply bg-[#fcfcfd] text-[#0a0a0a] overflow-x-hidden antialiased;
+    cursor: none; /* Hide default cursor for trailer */
   }
   
+  @media (max-width: 1024px) {
+    body { cursor: auto; }
+  }
+
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
   }
 }
 
+/* Cursor Trailer */
+.cursor-trailer {
+  @apply fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none z-[9999] mix-blend-difference bg-white transition-transform duration-300;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot {
+  @apply fixed top-0 left-0 w-1 h-1 bg-white rounded-full pointer-events-none z-[10000];
+  transform: translate(-50%, -50%);
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  @apply fixed top-0 left-0 h-[2px] bg-black z-[60] origin-left scale-x-0;
+}
+
 @layer components {
   /* Glassmorphism nav */
   .glass-nav {
-    background: rgba(252, 252, 253, 0.7);
+    background: var(--nav-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--nav-border);
+    color: var(--nav-text);
+  }
+
+  .nav-dark {
+    --nav-bg: rgba(0, 0, 0, 0.7);
+    --nav-text: #ffffff;
+    --nav-border: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Sticky Buy Bar */
+  .buy-bar {
+    @apply fixed bottom-0 w-full bg-white/80 backdrop-blur-xl border-t border-black/5 py-4 px-6 z-[40] translate-y-full transition-transform duration-500 ease-out;
+  }
+  .buy-bar.visible {
+    @apply translate-y-0;
   }
 
   /* Bento Grid styling */
@@ -53,6 +94,11 @@
   
   .bento-card:hover .img-zoom-container img {
     @apply scale-105;
+  }
+
+/* Image Clip Reveal */
+  .clip-reveal {
+    clip-path: inset(100% 0 0 0);
   }
 
   .text-balance {
