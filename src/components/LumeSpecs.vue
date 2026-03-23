@@ -9,7 +9,7 @@ interface Spec {
 }
 
 const specs = ref<Spec[]>([
-    { title: 'Audio Technology', content: 'Custom high-excursion Aura driver, custom high dynamic range amplifier, Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio with dynamic head tracking.', open: false },
+    { title: 'Audio Technology', content: 'Custom high-excursion Lume driver, custom high dynamic range amplifier, Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio with dynamic head tracking.', open: false },
     { title: 'Sensors', content: 'Dual beamforming microphones, inward-facing microphone, skin-detect sensor, motion-detecting accelerometer, speech-detecting accelerometer, and touch control.', open: false },
     { title: 'Battery', content: 'Up to 40 hours of listening time with a single charge (up to 30 hours with Spatial Audio and Head Tracking enabled). 5 minutes of charge time provides around 4 hours of listening time.', open: false },
     { title: 'Connectivity', content: 'Bluetooth 5.3 wireless technology with aptX Adaptive support for lossless audio streaming. Ultra-wideband chip for precision finding.', open: false }

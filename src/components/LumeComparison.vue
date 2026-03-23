@@ -49,7 +49,7 @@ onMounted(() => {
             <div class="hidden md:block"></div>
             <div class="bg-black text-white p-6 rounded-[2rem] text-center shadow-2xl relative overflow-hidden group">
                 <div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                <div class="relative z-10">AURA ONE</div>
+                <div class="relative z-10">LUME ONE</div>
             </div>
             <div class="text-gray-400 text-center">WH-1000XM5</div>
             <div class="text-gray-400 text-center">AirPods Max</div>

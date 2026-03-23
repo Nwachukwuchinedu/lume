@@ -17,9 +17,9 @@ onMounted(() => {
   <div class="buy-bar" :class="{ 'visible': visible }">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div class="flex items-center gap-4">
-        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=100&auto=format&fit=crop" alt="Aura One" class="w-12 h-12 rounded-lg object-cover">
+        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=100&auto=format&fit=crop" alt="Lume One" class="w-12 h-12 rounded-lg object-cover">
         <div>
-          <h4 class="font-bold text-sm">Aura One</h4>
+          <h4 class="font-bold text-sm">Lume One</h4>
           <p class="text-xs text-gray-500">$399.00</p>
         </div>
       </div>

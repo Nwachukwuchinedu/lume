@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const quotes = [
   { logo: 'Wired', quote: "The future of spatial audio is here, and it's crystal clear.", color: 'bg-black text-white' },
   { logo: 'The Verge', quote: "Design-wise, it's the sleekest headphone on the market.", color: 'bg-gray-100 text-black' },
-  { logo: 'Forbes', quote: "Aura is a masterpiece of modern engineering.", color: 'bg-white text-black border border-gray-100' },
+  { logo: 'Forbes', quote: "Lume is a masterpiece of modern engineering.", color: 'bg-white text-black border border-gray-100' },
   { logo: 'Rolling Stone', quote: "Hearing music for the first time, all over again.", color: 'bg-black text-white' },
   { logo: 'TechRadar', quote: "Battery life that actually outlasts your longest flight.", color: 'bg-gray-100 text-black' },
 ];

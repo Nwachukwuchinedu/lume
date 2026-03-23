@@ -82,7 +82,7 @@ onUnmounted(() => {
     <div class="max-w-4xl mx-auto z-10">
       <div class="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white shadow-sm mb-8">
         <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-        <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Aura One Now Available</span>
+        <span class="text-xs font-semibold uppercase tracking-widest text-gray-500">Lume One Now Available</span>
       </div>
       
       <h1 class="hero-text text-6xl md:text-8xl font-extrabold tracking-tighter leading-[1.1] text-balance mb-6">
@@ -118,7 +118,7 @@ onUnmounted(() => {
       <div class="float-element absolute -bottom-10 -right-10 w-60 h-60 bg-gradient-to-br from-gray-400/30 to-black/30 rounded-full blur-3xl z-0" style="animation-delay: 1s;"></div>
       
       <div class="absolute inset-0 bg-black/5 z-10 rounded-3xl"></div>
-      <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=2000&auto=format&fit=crop" alt="Aura Headphones" class="w-full h-[400px] md:h-[600px] object-cover object-center rounded-3xl relative z-20">
+      <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=2000&auto=format&fit=crop" alt="Lume Headphones" class="w-full h-[400px] md:h-[600px] object-cover object-center rounded-3xl relative z-20">
     </div>
   </section>
 </template>

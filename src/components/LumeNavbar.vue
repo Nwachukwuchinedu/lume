@@ -11,7 +11,7 @@ defineProps<{
         <div class="w-8 h-8 rounded-full flex items-center justify-center transition-colors" :class="scrolled ? 'bg-black' : 'bg-white/10'">
           <div class="w-3 h-3 bg-white rounded-full"></div>
         </div>
-        <span class="font-bold text-xl tracking-tight">AURA</span>
+        <span class="font-bold text-xl tracking-tight">LUME</span>
       </div>
       
       <div class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-500 reveal-nav">

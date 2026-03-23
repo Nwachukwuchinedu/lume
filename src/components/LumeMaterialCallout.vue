@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const hotspots = [
     { x: '30%', y: '40%', title: 'Grade 6063 Aluminum', content: 'Lightweight, durable, and precision-engineered for zero resonance.' },
     { x: '70%', y: '35%', title: 'Memory Foam', content: 'Density of 60kg/m³, designed for all-day comfort and acoustic sealing.' },
-    { x: '50%', y: '65%', title: '40mm Aura Driver', content: 'Custom-developed diaphragm for punchy bass and crystalline highs.' },
+    { x: '50%', y: '65%', title: '40mm Lume Driver', content: 'Custom-developed diaphragm for punchy bass and crystalline highs.' },
     { x: '25%', y: '75%', title: 'Mesh Fabric', content: 'Breathable synthetic skin allows for maximum comfort without sound leakage.' }
 ];
 
@@ -18,7 +18,7 @@ const active = ref<number | null>(null);
         <div class="h-[600px] w-full rounded-[4rem] bg-gradient-to-br from-gray-900 to-black overflow-hidden relative border border-white/10 group">
           <!-- Main Product Focus -->
           <img src="https://images.unsplash.com/photo-1628202926206-c63a34b1618f?q=80&w=1000&auto=format&fit=crop" 
-               alt="Aura Internals" 
+               alt="Lume Internals" 
                class="w-full h-full object-cover scale-150 group-hover:scale-125 transition-transform duration-1000 opacity-60">
           
           <!-- Hotspots -->
@@ -44,7 +44,7 @@ const active = ref<number | null>(null);
       <div>
         <div class="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-8">INSIDE THE BUILD</div>
         <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-tight">Masterpiece <br><span class="text-gray-500">of engineering.</span></h2>
-        <p class="text-xl text-gray-400 mb-12 text-balance leading-[1.4]">Every millimeter of Aura One is sculpted with intent. No screws. No joints. Just absolute acoustic purity.</p>
+        <p class="text-xl text-gray-400 mb-12 text-balance leading-[1.4]">Every millimeter of Lume One is sculpted with intent. No screws. No joints. Just absolute acoustic purity.</p>
         
         <div class="space-y-8">
             <div v-for="(h, i) in hotspots" :key="i" class="border-t border-white/5 pt-8 group cursor-pointer" @mouseenter="active = i" @mouseleave="active = null">

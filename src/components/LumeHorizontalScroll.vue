@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const features = [
   { title: 'Aerospace Components', desc: 'Sourced from Virgin Galactic suppliers for uncompromising durability.', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000' },
-  { title: 'Neural ANC', desc: 'Real-time noise cancellation driven by our custom Aura AI chip.', image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=1000' },
+  { title: 'Neural ANC', desc: 'Real-time noise cancellation driven by our custom Lume AI chip.', image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=1000' },
   { title: 'Infinite Battery', desc: 'Our proprietary energy recovery system extends single-charge life to 60h.', image: 'https://images.unsplash.com/photo-1610484826967-09c5720778c7?q=80&w=1000' },
   { title: 'Spatial Studio', desc: 'Place yourself in the middle of any concert hall in the world.', image: 'https://images.unsplash.com/photo-1593077542540-ad0503f8993a?q=80&w=1000' },
 ];

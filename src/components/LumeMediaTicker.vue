@@ -27,8 +27,8 @@ const updateProgress = () => {
         <div class="flex items-center gap-4 mb-8">
             <span class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center animate-pulse"><Volume2 class="w-6 h-6" /></span>
             <div>
-                <h4 class="text-xl font-bold">Immersive Demo: "Midnight Aura"</h4>
-                <p class="text-gray-500 font-medium">Original Soundscape for Aura One</p>
+                <h4 class="text-xl font-bold">Immersive Demo: "Midnight Lume"</h4>
+                <p class="text-gray-500 font-medium">Original Soundscape for Lume One</p>
             </div>
         </div>
         

@@ -23,7 +23,7 @@ const active = ref<Profile>(profiles[0]!);
       <div>
         <div class="inline-block bg-black text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-8">SOUND PROFILES</div>
         <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-tight">Tailored <br><span class="text-gray-400">to your ear.</span></h2>
-        <p class="text-xl text-gray-500 mb-12 text-balance leading-[1.4]">Select from our meticulously tuned EQ presets or create your own signature profile in the Aura App.</p>
+        <p class="text-xl text-gray-500 mb-12 text-balance leading-[1.4]">Select from our meticulously tuned EQ presets or create your own signature profile in the Lume App.</p>
         
         <div class="flex flex-wrap gap-4">
             <button v-for="p in profiles" :key="p.name" 

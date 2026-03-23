@@ -24,7 +24,7 @@ import { Camera, ArrowRight } from 'lucide-vue-next';
       <div>
         <div class="inline-block bg-black text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-8 uppercase">Future-Proof</div>
         <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-tight">Virtual <br><span class="text-gray-400">try-on.</span></h2>
-        <p class="text-xl text-gray-500 mb-12 text-balance leading-[1.4]">Experience Aura One from the comfort of your home. Use our high-precision AR scanner to see exactly how they sit on your head and match your style.</p>
+        <p class="text-xl text-gray-500 mb-12 text-balance leading-[1.4]">Experience Lume One from the comfort of your home. Use our high-precision AR scanner to see exactly how they sit on your head and match your style.</p>
         
         <button class="bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-2xl flex items-center justify-center gap-2 group magnetic-btn">
           Open AR Scanner <ArrowRight class="w-5 h-5 group-hover:translate-x-1" />

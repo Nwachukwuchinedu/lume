@@ -32,7 +32,7 @@ onMounted(() => {
       <!-- Inner Case -->
       <div class="absolute w-[400px] h-[400px] bg-white rounded-[4rem] shadow-2xl flex items-center justify-center overflow-hidden z-0">
           <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1000&auto=format&fit=crop" 
-               alt="Aura One" 
+               alt="Lume One" 
                class="box-headphones w-3/4 object-contain drop-shadow-2xl z-10">
           <!-- Tissue Paper -->
           <div class="box-tissue absolute inset-0 bg-[#f9f9f9] z-20 mix-blend-multiply flex items-center justify-center">
@@ -45,7 +45,7 @@ onMounted(() => {
         <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4">
             <div class="w-4 h-4 bg-white rounded-full"></div>
         </div>
-        <span class="text-2xl font-bold tracking-tight">AURA</span>
+        <span class="text-2xl font-bold tracking-tight">LUME</span>
         <span class="text-xs font-bold uppercase tracking-widest text-gray-500 mt-2">Sculpted Sound</span>
       </div>
     </div>

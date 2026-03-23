@@ -3,24 +3,24 @@ import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import AuraNavbar from './components/AuraNavbar.vue';
-import AuraHero from './components/AuraHero.vue';
-import AuraMarquee from './components/AuraMarquee.vue';
-import AuraPressWall from './components/AuraPressWall.vue';
-import AuraMaterialCallout from './components/AuraMaterialCallout.vue';
-import AuraSoundProfile from './components/AuraSoundProfile.vue';
-import AuraHorizontalScroll from './components/AuraHorizontalScroll.vue';
-import AuraBentoGrid from './components/AuraBentoGrid.vue';
-import AuraComparison from './components/AuraComparison.vue';
-import AuraTestimonialStrip from './components/AuraTestimonialStrip.vue';
-import AuraUnboxing from './components/AuraUnboxing.vue';
-import AuraMediaTicker from './components/AuraMediaTicker.vue';
-import AuraCTA from './components/AuraCTA.vue';
-import AuraFooter from './components/AuraFooter.vue';
-import AuraBuyBar from './components/AuraBuyBar.vue';
-import AuraSpecs from './components/AuraSpecs.vue';
-import AuraProduct3D from './components/AuraProduct3D.vue';
-import AuraARSection from './components/AuraARSection.vue';
+import LumeNavbar from './components/LumeNavbar.vue';
+import LumeHero from './components/LumeHero.vue';
+import LumeMarquee from './components/LumeMarquee.vue';
+import LumePressWall from './components/LumePressWall.vue';
+import LumeMaterialCallout from './components/LumeMaterialCallout.vue';
+import LumeSoundProfile from './components/LumeSoundProfile.vue';
+import LumeHorizontalScroll from './components/LumeHorizontalScroll.vue';
+import LumeBentoGrid from './components/LumeBentoGrid.vue';
+import LumeComparison from './components/LumeComparison.vue';
+import LumeTestimonialStrip from './components/LumeTestimonialStrip.vue';
+import LumeUnboxing from './components/LumeUnboxing.vue';
+import LumeMediaTicker from './components/LumeMediaTicker.vue';
+import LumeCTA from './components/LumeCTA.vue';
+import LumeFooter from './components/LumeFooter.vue';
+import LumeBuyBar from './components/LumeBuyBar.vue';
+import LumeSpecs from './components/LumeSpecs.vue';
+import LumeProduct3D from './components/LumeProduct3D.vue';
+import LumeARSection from './components/LumeARSection.vue';
 
 import { initMagneticButtons } from './utils/animations';
 
@@ -99,27 +99,27 @@ onMounted(() => {
     <div class="cursor-dot hidden lg:block"></div>
     <div class="scroll-progress"></div>
 
-    <AuraNavbar :scrolled="scrolled" :class="{ 'nav-dark': isDarkSection }" />
+    <LumeNavbar :scrolled="scrolled" :class="{ 'nav-dark': isDarkSection }" />
     
     <main>
-      <AuraHero />
-      <AuraMarquee />
-      <AuraPressWall />
-      <AuraProduct3D />
-      <AuraMaterialCallout />
-      <AuraSoundProfile />
-      <AuraHorizontalScroll />
-      <AuraBentoGrid />
-      <AuraComparison />
-      <AuraSpecs />
-      <AuraUnboxing />
-      <AuraARSection />
-      <AuraTestimonialStrip />
-      <AuraMediaTicker />
-      <AuraCTA />
+      <LumeHero />
+      <LumeMarquee />
+      <LumePressWall />
+      <LumeProduct3D />
+      <LumeMaterialCallout />
+      <LumeSoundProfile />
+      <LumeHorizontalScroll />
+      <LumeBentoGrid />
+      <LumeComparison />
+      <LumeSpecs />
+      <LumeUnboxing />
+      <LumeARSection />
+      <LumeTestimonialStrip />
+      <LumeMediaTicker />
+      <LumeCTA />
     </main>
     
-    <AuraBuyBar />
-    <AuraFooter />
+    <LumeBuyBar />
+    <LumeFooter />
   </div>
 </template>
