@@ -89,6 +89,20 @@ onMounted(() => {
       }
     });
   });
+
+  // 7. Click Reveal Animations
+  const clipElements = document.querySelectorAll('.clip-reveal');
+  clipElements.forEach((el) => {
+    gsap.to(el, {
+      clipPath: 'inset(0% 0 0 0)',
+      duration: 1.5,
+      ease: 'power4.inOut',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 85%',
+      }
+    });
+  });
 });
 </script>
 
