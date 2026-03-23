@@ -35,8 +35,9 @@ onMounted(() => {
   const dot = document.querySelector('.cursor-dot') as HTMLElement;
   
   window.addEventListener('mousemove', (e) => {
-    gsap.to(trailer, { x: e.clientX, y: e.clientY, duration: 0.5, ease: 'power3.out' });
-    gsap.to(dot, { x: e.clientX, y: e.clientY, duration: 0.1 });
+    if (window.innerWidth < 1024) return;
+    gsap.to(trailer, { x: e.clientX, y: e.clientY, duration: 0 });
+    gsap.to(dot, { x: e.clientX, y: e.clientY, duration: 0 });
   });
 
   // 2. Scroll Progress
