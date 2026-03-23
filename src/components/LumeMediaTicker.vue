@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Play, Pause, Repeat, SkipBack, SkipForward, Volume2 } from 'lucide-vue-next';
+import { Play, Pause, Repeat, SkipBack, SkipForward, Volume2, ArrowRight } from 'lucide-vue-next';
 
 const isPlaying = ref(false);
 const progress = ref(45); // mocked progress
@@ -61,7 +61,7 @@ const updateProgress = () => {
                 </div>
             </div>
             
-            <audio ref="audioRef" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" @timeupdate="updateProgress"></audio>
+            <audio ref="audioRef" src="https://raw.githubusercontent.com/rafaelreis-hotmart/Audio-Sample-files/master/sample.mp3" @timeupdate="updateProgress"></audio>
         </div>
       </div>
 

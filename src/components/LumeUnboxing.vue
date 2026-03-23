@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.unboxing-section',

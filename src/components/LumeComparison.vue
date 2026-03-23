@@ -2,6 +2,7 @@
 import { Check, X } from 'lucide-vue-next';
 import { onMounted } from 'vue';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const features = [
   { name: 'Pure Spatial Audio', aura: true, sony: false, apple: true },
@@ -13,6 +14,7 @@ const features = [
 ];
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
   gsap.from('.feature-row', {
     x: -50,
     opacity: 0,

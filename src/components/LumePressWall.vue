@@ -12,6 +12,7 @@ const quotes = [
 ];
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
   gsap.from('.press-card', {
     y: 100,
     opacity: 0,

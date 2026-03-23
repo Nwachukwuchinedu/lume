@@ -105,7 +105,8 @@ onUnmounted(() => {
     </div>
 
     <!-- Audio Element Hidden -->
-    <audio ref="audioRef" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" crossOrigin="anonymous"></audio>
+    <!-- Audio Element Hidden -->
+    <audio ref="audioRef" src="https://raw.githubusercontent.com/rafaelreis-hotmart/Audio-Sample-files/master/sample.mp3" crossOrigin="anonymous"></audio>
 
     <!-- Visualizer Canvas -->
     <div class="absolute inset-0 z-0 pointer-events-none opacity-20 flex items-center justify-center">

@@ -11,6 +11,7 @@ const features = [
 ];
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
   const sections = gsap.utils.toArray('.horizontal-panel');
   
   gsap.to(sections, {
