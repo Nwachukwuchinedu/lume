@@ -34,16 +34,16 @@ onMounted(() => {
            class="horizontal-panel flex-shrink-0 w-screen h-screen relative flex items-center justify-center p-10 overflow-hidden">
         
         <!-- Background Reveal Image -->
-        <div class="absolute inset-x-20 inset-y-40 rounded-[4rem] overflow-hidden group">
+        <div class="absolute inset-x-4 inset-y-20 md:inset-x-20 md:inset-y-40 rounded-[2rem] md:rounded-[4rem] overflow-hidden group">
             <img :src="f.image" class="w-full h-full object-cover scale-125 group-hover:scale-100 transition-transform duration-1000 opacity-60">
             <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </div>
 
         <!-- Content Overlay -->
-        <div class="relative z-10 text-white max-w-4xl px-20 text-left">
+        <div class="relative z-10 text-white max-w-4xl px-8 md:px-20 text-left">
             <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-8">FEATURE 0{{ i + 1 }}</div>
-            <h2 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight text-white">{{ f.title }}</h2>
-            <p class="text-2xl text-gray-400 max-w-xl leading-relaxed text-balance">{{ f.desc }}</p>
+            <h2 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight text-white">{{ f.title }}</h2>
+            <p class="text-lg md:text-2xl text-gray-400 max-w-xl leading-relaxed text-balance">{{ f.desc }}</p>
         </div>
       </div>
     </div>

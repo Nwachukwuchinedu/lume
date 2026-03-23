@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Menu } from 'lucide-vue-next';
 defineProps<{
   scrolled: boolean;
 }>();
@@ -25,6 +26,9 @@ defineProps<{
         <button class="hidden md:block font-medium text-sm hover:opacity-70 transition-opacity">Log In</button>
         <button class="bg-black text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-lg magnetic-btn">
           Pre-order
+        </button>
+        <button class="md:hidden p-2 hover:bg-black/5 rounded-full transition-colors">
+          <Menu class="w-6 h-6" />
         </button>
       </div>
     </div>

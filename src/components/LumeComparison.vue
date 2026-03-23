@@ -47,41 +47,45 @@ onMounted(() => {
         <h2 class="text-5xl font-extrabold tracking-tight mb-4 leading-tight">Beyond comparison.</h2>
         <p class="text-xl text-gray-500 mb-20 text-balance">The only headphones engineered without compromise.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-left comp-grid items-center font-bold">
-            <div class="hidden md:block"></div>
-            <div class="bg-black text-white p-6 rounded-[2rem] text-center shadow-2xl relative overflow-hidden group">
-                <div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                <div class="relative z-10">LUME ONE</div>
+        <div class="overflow-x-auto pb-6 -mx-6 px-6">
+          <div class="min-w-[800px]">
+            <div class="grid grid-cols-4 gap-12 text-left comp-grid items-center font-bold mb-8">
+                <div></div>
+                <div class="bg-black text-white p-6 rounded-[2rem] text-center shadow-2xl relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                    <div class="relative z-10">LUME ONE</div>
+                </div>
+                <div class="text-gray-400 text-center">WH-1000XM5</div>
+                <div class="text-gray-400 text-center">AirPods Max</div>
             </div>
-            <div class="text-gray-400 text-center">WH-1000XM5</div>
-            <div class="text-gray-400 text-center">AirPods Max</div>
-        </div>
 
-        <div class="comp-table space-y-4 mt-8">
-            <div v-for="(f, i) in features" :key="i" class="grid grid-cols-1 md:grid-cols-4 gap-8 p-10 bg-white border border-black/5 rounded-[2.5rem] feature-row items-center font-semibold text-lg transition-transform hover:scale-[1.01]">
-                <div class="font-bold text-gray-900">{{ f.name }}</div>
-                <div class="flex justify-center flex-col items-center">
-                    <div class="bg-black p-3 rounded-full text-white check-icon">
-                        <Check class="w-6 h-6" />
+            <div class="comp-table space-y-4">
+                <div v-for="(f, i) in features" :key="i" class="grid grid-cols-4 gap-8 p-10 bg-white border border-black/5 rounded-[2.5rem] feature-row items-center font-semibold text-lg transition-transform hover:scale-[1.01]">
+                    <div class="font-bold text-gray-900">{{ f.name }}</div>
+                    <div class="flex justify-center flex-col items-center">
+                        <div class="bg-black p-3 rounded-full text-white check-icon">
+                            <Check class="w-6 h-6" />
+                        </div>
                     </div>
-                </div>
-                <div class="flex justify-center flex-col items-center">
-                    <div v-if="f.sony" class="bg-gray-100 p-3 rounded-full text-black check-icon">
-                        <Check class="w-6 h-6" />
+                    <div class="flex justify-center flex-col items-center">
+                        <div v-if="f.sony" class="bg-gray-100 p-3 rounded-full text-black check-icon">
+                            <Check class="w-6 h-6" />
+                        </div>
+                        <div v-else class="text-gray-200 check-icon">
+                            <X class="w-6 h-6" />
+                        </div>
                     </div>
-                    <div v-else class="text-gray-200 check-icon">
-                        <X class="w-6 h-6" />
-                    </div>
-                </div>
-                <div class="flex justify-center flex-col items-center">
-                    <div v-if="f.apple" class="bg-gray-100 p-3 rounded-full text-black check-icon">
-                        <Check class="w-6 h-6" />
-                    </div>
-                    <div v-else class="text-gray-200 check-icon">
-                        <X class="w-6 h-6" />
+                    <div class="flex justify-center flex-col items-center">
+                        <div v-if="f.apple" class="bg-gray-100 p-3 rounded-full text-black check-icon">
+                            <Check class="w-6 h-6" />
+                        </div>
+                        <div v-else class="text-gray-200 check-icon">
+                            <X class="w-6 h-6" />
+                        </div>
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
   </section>
